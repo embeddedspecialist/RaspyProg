@@ -1,0 +1,648 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7">
+  <NonVisualComponents>
+    <Container class="javax.swing.JPanel" name="mainPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="mainPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+    </Container>
+    <Container class="javax.swing.JMenuBar" name="menuBar">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="menuBar" noResource="true"/>
+        <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+              <action class="raspyprog.AFOVisualConfiguratorView" id="newProjectAction" methodName="newProjectAction"/>
+            </Property>
+            <Property name="text" type="java.lang.String" resourceKey="fileMenu.text"/>
+            <Property name="name" type="java.lang.String" value="fileMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuNewPrj">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="newProjectAction" methodName="newProjectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuNewPrj.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuNewPrj.text"/>
+                <Property name="name" type="java.lang.String" value="menuNewPrj" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuOpenPrj">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="openProject" methodName="openProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuOpenPrj.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuOpenPrj.text"/>
+                <Property name="name" type="java.lang.String" value="menuOpenPrj" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuSavePrj">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="saveProject" methodName="saveProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuSavePrj.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuSavePrj.text"/>
+                <Property name="name" type="java.lang.String" value="menuSavePrj" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuSaveAs">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="saveAsAction" methodName="saveAsAction"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="menuSaveAs" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuCloseProject">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="closeProject" methodName="closeProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuCloseProject.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuCloseProject.text"/>
+                <Property name="name" type="java.lang.String" value="menuCloseProject" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator3">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jSeparator3" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuImport">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menuImport.text"/>
+                <Property name="name" type="java.lang.String" value="menuImport" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuExport">
+              <Properties>
+                <Property name="text" type="java.lang.String" resourceKey="menuExport.text"/>
+                <Property name="name" type="java.lang.String" value="menuExport" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jSeparator1" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuExit">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="org.jdesktop.application.Application" id="quit" methodName="quit"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuExit.icon"/>
+                <Property name="name" type="java.lang.String" value="menuExit" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="menuEdit">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="menuEdit.text"/>
+            <Property name="name" type="java.lang.String" value="menuEdit" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuProjProperties">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="editProjectAction" methodName="editProjectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuProjProperties.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuProjProperties.text"/>
+                <Property name="name" type="java.lang.String" value="menuProjProperties" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
+              <Properties>
+                <Property name="name" type="java.lang.String" value="jSeparator2" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuAddTimer">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="addTimer" methodName="addTimer"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuAddTimer.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuAddTimer.text"/>
+                <Property name="name" type="java.lang.String" value="menuAddTimer" noResource="true"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="menuDeleteTimer">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="deleteTimer" methodName="deleteTimer"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuDeleteTimer.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuDeleteTimer.text"/>
+                <Property name="name" type="java.lang.String" value="menuDeleteTimer" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="View">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="View.text"/>
+            <Property name="name" type="java.lang.String" value="View" noResource="true"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="menuSatellite">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="openSateliteView" methodName="openSateliteView"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="menuSatellite.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="menuSatellite.text"/>
+                <Property name="name" type="java.lang.String" value="menuSatellite" noResource="true"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="text" type="java.lang.String" resourceKey="helpMenu.text"/>
+            <Property name="name" type="java.lang.String" value="helpMenu" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="showAboutBox" methodName="showAboutBox"/>
+                </Property>
+                <Property name="name" type="java.lang.String" value="aboutMenuItem" noResource="true"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+                <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+              </AuxValues>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="statusPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="statusPanel" noResource="true"/>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="statusPanelSeparator" alignment="0" pref="860" max="32767" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusMessageLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="690" max="32767" attributes="0"/>
+                  <Component id="progressBar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="statusAnimationLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Component id="statusPanelSeparator" min="-2" pref="2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="statusMessageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="statusAnimationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="progressBar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JSeparator" name="statusPanelSeparator">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusPanelSeparator" noResource="true"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusMessageLabel">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="statusMessageLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="statusAnimationLabel">
+          <Properties>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="name" type="java.lang.String" value="statusAnimationLabel" noResource="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JProgressBar" name="progressBar">
+          <Properties>
+            <Property name="name" type="java.lang.String" value="progressBar" noResource="true"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JToolBar" name="toolBar">
+      <Properties>
+        <Property name="rollover" type="boolean" value="true"/>
+        <Property name="borderPainted" type="boolean" value="false"/>
+        <Property name="name" type="java.lang.String" value="toolBar" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JToolBar" name="toolBarFile">
+          <Properties>
+            <Property name="rollover" type="boolean" value="true"/>
+            <Property name="name" type="java.lang.String" value="toolBarFile" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnToolNew">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="newProjectAction" methodName="newProjectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnToolNew.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnToolNew.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnToolNew.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnToolNew" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnToolOpen">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="openProject" methodName="openProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnToolOpen.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnToolOpen.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnToolOpen.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnToolOpen" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnToolSave">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="saveProject" methodName="saveProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnToolSave.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnToolSave.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnToolSave.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnToolSave" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnToolClose">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="closeProject" methodName="closeProject"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnToolClose.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnToolClose.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnToolClose.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnToolClose" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnImport">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="importSubSystemAction" methodName="importSubSystemAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnImport.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnImport.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnImport.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnImport" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnExport">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="exportSubSystemAction" methodName="exportSubSystemAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnExport.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnExport.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnExport.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnExport" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JToolBar" name="toolBarEdit">
+          <Properties>
+            <Property name="rollover" type="boolean" value="true"/>
+            <Property name="name" type="java.lang.String" value="toolBarEdit" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnProjProperties">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="editProjectAction" methodName="editProjectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnProjProperties.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnProjProperties.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnProjProperties.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnProjProperties" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEditBlock">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="editSelectedBlock" methodName="editSelectedBlock"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnEditBlock.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnEditBlock.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnEditBlock.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnEditBlock" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDeleteBlock">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="deleteBlock" methodName="deleteBlock"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnDeleteBlock.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnDeleteBlock.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnDeleteBlock.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnDeleteBlock" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnExportToINI">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="exportToIni" methodName="exportToIni"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnExportToINI.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnExportToINI.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnExportToINI.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnExportToINI" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnExportToINIActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JToolBar" name="toolBarTimer">
+          <Properties>
+            <Property name="rollover" type="boolean" value="true"/>
+            <Property name="name" type="java.lang.String" value="toolBarTimer" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnAddTimer">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="addTimer" methodName="addTimer"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnAddTimer.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnAddTimer.text"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnAddTimer" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDeleteTimer">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="deleteTimer" methodName="deleteTimer"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnDeleteTimer.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnDeleteTimer.text"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnDeleteTimer" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSetDateTime">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="setDateTimeAction" methodName="setDateTimeAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnSetDateTime.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnSetDateTime.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnSetDateTime.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnSetDateTime" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JToolBar" name="toolBarConnect">
+          <Properties>
+            <Property name="rollover" type="boolean" value="true"/>
+            <Property name="name" type="java.lang.String" value="toolBarConnect" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnConnect">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="connectAction" methodName="connectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnConnect.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnConnect.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnConnect.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnConnect" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnDisconnect">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="disconnectAction" methodName="disconnectAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnDisconnect.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnDisconnect.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnDisconnect.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnDisconnect" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnShowLog">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="showConnectionLogAction" methodName="showConnectionLogAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnShowLog.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnShowLog.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnShowLog.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnShowLog" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnShowErrors">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="showErrorLogAction" methodName="showErrorLogAction"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnShowErrors.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnShowErrors.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnShowErrors.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnShowErrors" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnUploadConfiguration">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="sendConfigToDevice" methodName="sendConfigToDevice"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnUploadConfiguration.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnUploadConfiguration.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnUploadConfiguration.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnUploadConfiguration" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnSendConfigFile">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="actionSendConfigFile" methodName="actionSendConfigFile"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnSendConfigFile.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnSendConfigFile.text"/>
+                <Property name="toolTipText" type="java.lang.String" resourceKey="btnSendConfigFile.toolTipText"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnSendConfigFile" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JToolBar" name="toolView">
+          <Properties>
+            <Property name="rollover" type="boolean" value="true"/>
+            <Property name="name" type="java.lang.String" value="toolView" noResource="true"/>
+          </Properties>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnShowSatellite">
+              <Properties>
+                <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+                  <action class="raspyprog.AFOVisualConfiguratorView" id="openSateliteView" methodName="openSateliteView"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnShowSatellite.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnShowSatellite.text"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnShowSatellite" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnZoomToFit">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" resourceKey="btnZoomToFit.icon"/>
+                <Property name="text" type="java.lang.String" resourceKey="btnZoomToFit.text"/>
+                <Property name="focusable" type="boolean" value="false"/>
+                <Property name="horizontalTextPosition" type="int" value="0"/>
+                <Property name="name" type="java.lang.String" value="btnZoomToFit" noResource="true"/>
+                <Property name="verticalTextPosition" type="int" value="3"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="component" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="mainPanel"/>
+    </Property>
+    <Property name="menuBar" type="javax.swing.JMenuBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="menuBar"/>
+    </Property>
+    <Property name="statusBar" type="javax.swing.JComponent" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="statusPanel"/>
+    </Property>
+    <Property name="toolBar" type="javax.swing.JToolBar" editor="org.netbeans.modules.form.ComponentChooserEditor">
+      <ComponentRef name="toolBar"/>
+    </Property>
+  </Properties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,-58,0,0,3,92"/>
+  </AuxValues>
+</Form>
