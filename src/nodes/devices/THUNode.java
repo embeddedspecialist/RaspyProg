@@ -144,8 +144,8 @@ public class THUNode extends DeviceNode {
     public String getIniString(int deviceIndex) throws Exception {
 
             if (serialNumber.isEmpty()){
-                JOptionPane.showMessageDialog(null, "Il dispositivo THU di indirizzo:" + addressList.get(0)+" , commento: "+
-                        comment+" NON ha numero di serie.\n IL DISPOSITIVO NON FUNZIONERA'","Errore",JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "THU device with address :" + addressList.get(0)+" , comment: "+
+                            comment+" DOES NOT HAVE any serial number.\n THE DEVICE WILL NOT WORK","Errore",JOptionPane.ERROR_MESSAGE);
             }
         String retVal="";
 
