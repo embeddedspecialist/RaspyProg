@@ -16,7 +16,7 @@ import org.jdesktop.application.SingleFrameApplication;
  */
 public class RaspyProgApp extends SingleFrameApplication {
 
-    public static  String VERSION = "1.5";
+    public static  String VERSION = "1.5.1";
     
     /**
      * At startup create and show the main frame of the application.
