@@ -308,7 +308,7 @@ public class AFOSystemManager extends GenericNode {
 
             //Se elementID non è nullo sto inserendo dei punti, se è null sto ricaricando
             if (inserting){
-                String numIO = JOptionPane.showInputDialog(null, "Inserire il numero di blocchi che si vuole creare:") ;
+                String numIO = JOptionPane.showInputDialog(null, "Please specify the number of blocks to add:") ;
                 if (numIO == null){
                     return;
                 }
@@ -316,7 +316,7 @@ public class AFOSystemManager extends GenericNode {
                 try {
                     numIOint = Integer.parseInt(numIO);
                 } catch (Exception e) {
-                    JOptionPane.showMessageDialog(null, "Inserire un numero!!");
+                    JOptionPane.showMessageDialog(null, "Insert a number!!");
 
                     //TODO uscire dalla procedura in caso di errore oppure ripetere la domanda
                 }
@@ -369,7 +369,7 @@ public class AFOSystemManager extends GenericNode {
 
                 return;
             } else {
-                JOptionPane.showMessageDialog(null, "Inserire un numero inferiore a 15.");
+                JOptionPane.showMessageDialog(null, "Maximum number of elements is 15.");
             }
 
         }

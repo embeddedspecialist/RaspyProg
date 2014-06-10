@@ -336,7 +336,7 @@ public class Project implements ActionListener{
 
                     if (nodeList.isEmpty()){
                         JOptionPane.showMessageDialog(null,
-                                "Il master avente commento "+master.getComment()+" NON e' collegato",
+                                "The master module with comment "+master.getComment()+" is NOT connected",
                                 "Errore",
                                 JOptionPane.ERROR_MESSAGE);
                         continue;
@@ -402,7 +402,7 @@ public class Project implements ActionListener{
                         }
 
                         JOptionPane.showMessageDialog(null,
-                                "I seguenti blocchi NON sono collegati ad alcun master:\n"+message,
+                                "Following blocks are not connected to any master:\n"+message,
                                 "Errore",
                                 JOptionPane.ERROR_MESSAGE);
                     }                    
@@ -530,7 +530,7 @@ public class Project implements ActionListener{
                 } while ((nodesSwapped) && (iterationLimit > 0));
 
                 if (iterationLimit == 0){
-                    JOptionPane.showMessageDialog(null, "Attenzione il sottosistema: " + ssManager.getComment() + " contiene un loop",
+                    JOptionPane.showMessageDialog(null, "Warning subsystem: " + ssManager.getComment() + " contains a loop",
                             "Errore",
                             JOptionPane.ERROR_MESSAGE);
                 }
